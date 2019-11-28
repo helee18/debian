@@ -1,0 +1,22 @@
+//
+// Do any local configuration here
+//
+//Zona de busqueda directa
+zone "helena.sri" {
+	type master;
+	file "/etc/bind/db.helena.sri";
+};
+//Zona para busqueda inversa para la ip interna
+zone "131.0.10.in-addr.arpa" {
+	type master;
+	file "/etc/bind/db.10.0.131";
+};
+//Zona para busqueda inverda para la ip externa
+zone "22.168.192.in-addr.arpa" {
+	type master;
+	file "/etc/bind/db.192.168.22";
+};
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+

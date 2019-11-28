@@ -1,0 +1,12 @@
+$TTL 10800
+@	IN	SOA	ns.helena.sri.	helena.helena.sri. (
+				20191112	; Serial
+				604800		; Refresh
+				86400		; Retry
+				2419200		; Expire
+				10800 )		; TTL
+	IN	NS	ns.
+131	IN	PTR	ns.helena.sri.
+135	IN	PTR	helena.sri.
+137	IN	PTR	pc137.helena.sri.
+100	IN	PTR	router.helena.sri.

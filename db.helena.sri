@@ -1,0 +1,21 @@
+$ORIGIN helena.sri.
+$TTL 10800
+@		IN	SOA	ns.helena.sri.	helena.helena.sri. (
+					20191112	; Serial
+					604800		; Refresh
+					86400		; Retry
+					2419200		; Expire
+					10800 )		; TTL
+		IN	NS	ns.helena.sri.
+ns		IN	A	192.168.22.131
+		IN	A	10.0.131.1
+@		IN	A	192.168.22.135
+pc137		IN	A	192.168.22.137
+router		IN	A	192.168.22.100
+win		IN	A	10.0.131.2
+ubuntu		IN	A	10.0.131.3
+mail		IN	CNAME	ubuntu
+ftp		IN	CNAME	router
+www		IN	CNAME	helena.sri.
+tote		IN	CNAME	pc137
+@		IN	MX	10	mail.helena.sri.
